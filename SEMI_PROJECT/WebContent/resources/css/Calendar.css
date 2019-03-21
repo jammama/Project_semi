@@ -1,0 +1,266 @@
+@charset "UTF-8";
+
+@import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+
+::-webkit-scrollbar-button {
+	height: 0;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+body{
+	overflow: auto;
+}
+#main_main {
+	padding-top: 55px;
+	text-align: center;
+}
+
+#wrap {
+	display: inline-block;
+}
+
+
+.thead {
+	border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    background-color: #c1275a;
+	margin-top: 35px;
+	height: 60px;
+	width: 100%;
+	font-size: 50px;
+	font-weight: 250;
+	color: white;
+	font-family: 'Do Hyeon', sans-serif;
+}
+
+#calendar {
+	font-family: Roboto, sans-serif;
+	border-collapse: collapse;
+
+	border-bottom-style: solid;
+	border-bottom-color: #c1275a;
+	width: 900px;
+	height: 600px;
+}
+
+.weekdays th{
+	text-align: center;
+	font-family: 'Jeju Gothic', sans-serif;
+	background: #c1275a;
+	color: #FFF;
+	font-size:14px !important;
+	font-weight: bold;
+	height: 25px;
+}
+
+
+#calendar td {
+	width: 90px;
+	height: 100px;
+	border: 2px dotted #eceaef;
+	text-align: right;
+	font-size: 15px;
+	font-weight: 70;
+	padding-top: 10px;
+	padding-left: 1px;
+	padding-right: 1px;
+	vertical-align: top;
+	position: relative;
+	font-family: 'Jeju Gothic';
+}
+
+.clist>p {
+	font-size: 16px;
+	font-weight: 250;
+	font-family: Nanum Pen Script;
+	color: white;
+	padding: 3px;
+	background-color: #8bc640;
+	text-align: left !important;
+	margin-bottom: 0px;
+}
+
+.clist>p:first-child {
+	margin-top: 7px;
+}
+.clist>p:nth-child(2), .clist>p:nth-child(3){
+	margin-top: 1px;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+/* list */
+.callist_main {
+	padding-top: 10px;
+	text-align: center;
+	font-family: 'Jeju Gothic', sans-serif;
+}
+
+.callist_wrap {
+	margin-left: 10px;
+	margin-bottom: 15px;
+	position: relative;
+	display: inline-block;
+}
+
+#calList th{
+	text-align: center;
+}
+
+#calList tr{
+	margin-top: 5px;
+}
+
+/*
+#i1 {
+	border-radius: 10px;
+	outline: none;
+	height: 30px;
+	border: 5px solid #0093c4;
+    background: #0093c4;
+    font-family: 'Jeju Gothic', cursive;
+    cursor: pointer;
+    color: white;
+}
+*/
+
+/* insert */
+.insert_main {
+	padding-top: 10px;
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Jeju Gothic', sans-serif;
+}
+
+.insert_wrap {
+	margin-left: 10px;
+	margin-bottom: 15px;
+	position: relative;
+	display: inline-block;
+    font-family: 'Jeju Gothic', cursive;
+}
+
+#i2 {
+	border-radius: 15px;
+	outline: none;
+    border: 3px solid #8bc640;
+    background: #8bc640;
+    width: 250px;
+}
+
+#i2:first-child{
+	border-radius: 15px 0px 0px 15px;
+	width: 70px;
+}
+
+#i2:first-child+input{
+	border-radius: 0px 15px 15px 0px !important;
+	width: 20px;
+	margin-left: -5px;
+}
+
+#intext {
+	margin-top: 5px;
+	padding: 0.65em;
+	border-radius: 15px 0px 0px 15px !important;
+	border: 1px solid #87c13e;
+	outline: none;
+}
+
+#i3 {
+	border-radius: 0px 15px 0px 0px;
+	outline: none;
+	height: 50px;
+	border: 5px solid #87c13e;
+    background: #87c13e;
+    opacity: 0.9;
+    color: white;
+    margin-top: 15px;
+    margin-left: -5px;
+    cursor: pointer;
+    font-family: 'Jeju Gothic', cursive;
+}
+
+#i4 {
+	border-radius: 0px 0px 15px 0px;
+	outline: none;
+	height: 40px;
+	border: 5px solid #87c13e;
+    background: #87c13e;
+	opacity: 0.9;
+	color: white;
+    margin-left: -5px;
+    margin-bottom: 15px;  
+    cursor: pointer;
+	font-family: 'Jeju Gothic', cursive;
+}
+
+input::placeholder {
+	color: white !important;
+}
+
+
+/* detail */
+.detail_main {
+	padding-top: 10px;
+	text-align: center;
+	font-family: 'Jeju Gothic', sans-serif;
+}
+
+.detail_wrap {
+	margin-left: 10px;
+	margin-bottom: 15px;
+	position: relative;
+	display: inline-block;
+}
+
+#calDetail input{
+	margin-top: 5px;
+	outline: none;
+	border-collapse: collapse;
+}
+
+#i5 {
+	border-radius: 15px;
+    border: 3px solid #8bc640;
+    background: #8bc640;
+    width: 100%;
+    font-family: 'Jeju Gothic', sans-serif;
+}
+
+#detext {
+	border-radius: 15px;
+	padding: 7px;
+	font-family: 'Jeju Gothic', sans-serif;
+}
+
+#i6 {
+	border-radius: 10px;
+	outline: none;
+	height: 30px;
+	border: 5px solid #8bc640;
+    background: #8bc640;
+    font-family: 'Jeju Gothic', cursive;
+    cursor: pointer;
+}

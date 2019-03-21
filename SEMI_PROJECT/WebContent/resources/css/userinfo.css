@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+#gender {
+	width: 46.9%;
+	height: 50px;
+	border: 1px solid #CED4DA;
+	border-radius: 0.25rem;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+
+#woman {
+	float: left;
+	width: 50%;
+	line-height: 50px;
+	cursor: pointer;
+	text-align: center;
+	border-right: 1px solid #CED4DA;
+	border-radius: 0rem;
+}
+
+#man {
+	float: right;
+	width: 50%;
+	line-height: 50px;
+	cursor: pointer;
+	text-align: center;
+	border-radius: 0rem;
+}
+
+div>label>input[type=radio] {
+	visibility: hidden;
+}
+
+div>label>span {
+	margin-right: 20px;
+	color: #495057;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
+}
+
+.profile_wrap {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	height: 600px;
+	z-index: 100;
+}
+
+.profile_image {
+	width: 500px;
+	height: 500px;
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAALVBMVEX////i4uLj4+Px8fHHx8f39/fs7Oz09PTW1tbR0dHa2tr19fXn5+fq6urd3d26M3BPAAACp0lEQVR4nO3czYqDMBRA4cSMxvrT93/cYZTOOt4DTRbHVRYNfhxKvAhtOsp11bU2L2oObTqfbyrH4LxU0n3l1L4oe2DTMkfuNDgvlq9+zTc4z3yIZz7EMx/imQ/x0udWU2pflLn9s/+LJbKpDs5La76u6WdqX7y255umyKa8Ds7z24d4nn2IZz7EMx/imQ/xzId45kM8BxfEc2x2bO7H8+xDPPMhnvkQz3yIZz7EMx/iObggnmOzY3M/nmcf4pkP8cyHeOZDPPMhnvkQz8EF8RybHZv78Tz7EM98iGc+xDMf4pkP8cyHeA4uiOfY7Njcj+fZh3jmQzzzIZ75EM98iJcit/rez7Xr4LyU71/ll1dpX3z+LODRpndkUx6cl469/l3zNtfWxX6cgU15idxpcJ5/BYF4PjoQz3yIZz7EMx/imQ/xfGGFeL4u9XVpP55nH+KZD/HMh3jmQzzzIZ75EM/BBfEcmx2b+/E8+xDPfIhnPsQzH+KZD/HMh3gOLojn2OzY3I/n2Yd45kM88yGe+RDPfIhnPsRzcEE8x2bH5n48zz7EMx/imQ/xzId45kM88yGegwviOTY7NvfjefYhnvkQz3yIZz7EMx/ixZ68e/tnezx5v8dLebmv19K+eEc2bVNgUx6cl875vra5fXEsgU1TCWw6B+f5VxCI56MD8cyHeOZDPPMhnvkQzxdWiOfrUl+X9uN59iGe+RDPfIhnPsQzH+KZD/EcXBDPsdmxuR/Psw/xzId45kM88yGe+RDPfIjn4IJ4js2Ozf14nn2IZz7EMx/imQ/xzId45kM8BxfEc2x2bO7H8+xDPPMhnvkQz3yIZz7EMx/iObggnmOzY3M/nmcf4pkP8cyHeOZDPPMhnr8mR7x0lOuqa21e1BzadD7fVI7Beb9jtnsfGvaQcgAAAABJRU5ErkJggg==");
+}
+
+.preview {
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	z-index: 1;
+	opacity: 0.5;
+}
+
+.preview>img{
+	border-radius: 10px 10px 0px 0px;
+}
+
+.profile_button {
+	background-color: white;
+	height: 70px;
+	border: 2px solid #DFDFDF;
+	border-radius: 0px 0px 10px 10px;
+}
+
+.profile {
+	width: 110px;
+	height: 110px;
+	border-radius: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+	border: 2px solid #DFDFDF;
+}
+
+.profile_dropmenu{	
+  position: absolute;
+  display: none;
+  top: 25%;
+  left: 55%;
+  z-index: 100;
+  width: 160px;
+  padding: 10px 15px;
+  color: #5a5a5a;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 1px 2px 2px;
+}
+
+.profile_dropmenu>div{
+	padding: 4px;
+}
+
+.profile_dropmenu>div:hover {
+	background-color: #d5d5d5;
+}
+
+.button_userinfo{
+	background-color: #8a8a8a;
+	border-color: #8a8a8a;
+	cursor: pointer;
+	width: 100%;
+	color: #fff;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    border-radius: .25rem;
+}
+
+#email_change_bf2{
+	line-height: 2.2;
+}
+.filebox{
+	text-align: center;
+	padding-top: 13px;
+}
+.filebox label {
+  display: inline-block;
+  padding: .5em .75em;
+  color: #fff;
+  font-size: inherit;
+  line-height: normal;
+  vertical-align: middle;
+  background-color: #007bff;
+  cursor: pointer;
+  border: 1px solid #007bff;
+  border-radius: .25em;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.filebox label:hover {
+  background-color: #0066ff;
+}
+
+.filebox label:active {
+  background-color: #004eff;
+}
+
+.filebox input[type="file"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.filebox input[type="button"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.filebox input[type="reset"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.inside-div{
+	display: none;
+	z-index:30;
+	position: absolute;
+	background-color: white;
+	height: 100%;
+	width: 100%;
+	opacity: 0.5;
+}
+
